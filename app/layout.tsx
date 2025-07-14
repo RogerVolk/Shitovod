@@ -1,18 +1,18 @@
-// app/layout.tsx
-
-import './globals.css'
-import { ReactNode } from 'react'
+import './globals.css';
 
 export const metadata = {
   title: 'Shitovod',
-  description: 'Игра на счёт денег — тренируй внимательность и скорость!',
-}
+  description: 'Money Counting Game',
+};
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="ru">
-      <head />
+    <html lang="en">
       <body>{children}</body>
     </html>
-  )
+  );
 }
